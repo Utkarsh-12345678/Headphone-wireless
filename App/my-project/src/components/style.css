@@ -1,0 +1,15 @@
+
+
+.menu{
+    width: 100%;
+    border: 2px solid white;
+    text-align: center;
+}
+
+.none-display{
+    display: none;
+}
+
+.display{
+    display: block;
+}
