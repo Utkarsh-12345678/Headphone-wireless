@@ -10,8 +10,10 @@
 app.use(cors(
     {
         origin: ["http://127.0.0.1:5173/","https://mern-task-app.onrender.com"]
+        methods: ["POST","GET"],
+        credentials: true
     }
-))
+));
 app.use(express.urlencoded({extended:true}))
  mongoose.connect("mongodb://127.0.0.1:27017/headphone")
 
