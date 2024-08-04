@@ -10,7 +10,7 @@ const Login = () => {
 
     const handleSubmit=(e)=>{
         e.preventDefault();
-        axios.post("http://localhost:3008/login",{email,password})
+        axios.post("https://headphone-wireless.vercel.app/login",{email,password})
         .then(result=> {
             console.log(result)
             if(result.data==="success"){
