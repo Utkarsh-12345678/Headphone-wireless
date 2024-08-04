@@ -12,7 +12,7 @@ const Signup = () => {
 
     const handleSubmit=(e)=>{
         e.preventDefault();
-        axios.post("http://localhost:3008/register",{name,email,password})
+        axios.post("https://headphone-wireless.vercel.app/register",{name,email,password})
         .then(result=> {
             console.log(result)
             navigate("/login")
